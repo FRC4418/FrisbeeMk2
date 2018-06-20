@@ -9,7 +9,7 @@ import edu.wpi.first.wpilibj.command.Subsystem;
 /**
  *
  */
-public class DriveTrain extends Subsystem {
+public class ShooterSubsystem extends Subsystem {
 
 public static Talon leftShooter = new Talon(RobotMap.leftShooter);
 public static Talon rightShooter = new Talon(RobotMap.rightShooter);

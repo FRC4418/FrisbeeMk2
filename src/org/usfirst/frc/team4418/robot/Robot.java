@@ -15,6 +15,7 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import org.usfirst.frc.team4418.robot.commands.ExampleCommand;
 import org.usfirst.frc.team4418.robot.subsystems.DriveTrain;
 import org.usfirst.frc.team4418.robot.subsystems.ExampleSubsystem;
+import org.usfirst.frc.team4418.robot.subsystems.ShooterSubsystem;
 
 /**
  * The VM is configured to automatically run this class, and to call the
@@ -27,6 +28,7 @@ public class Robot extends TimedRobot {
 	public static final ExampleSubsystem kExampleSubsystem
 			= new ExampleSubsystem();
 	public static final DriveTrain driveTrain = new DriveTrain();
+	public static final ShooterSubsystem shooterSubsystem = new ShooterSubsystem();
 	public static OI m_oi;
 
 	Command m_autonomousCommand;
