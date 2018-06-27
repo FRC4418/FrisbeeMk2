@@ -8,7 +8,7 @@
 package org.usfirst.frc.team4418.robot;
 
 import org.usfirst.frc.team4418.robot.commands.ShooterCommand;
-
+import edu.wpi.first.wpilibj.command.*;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
 
@@ -42,7 +42,7 @@ public class OI {
 	// until it is finished as determined by it's isFinished method.
 	// button.whenPressed(new ExampleCommand());
 	public OI() {
-		button1.whileHeld(new ShooterCommand());
+		button1.toggleWhenPressed(new ShooterCommand());
 	}
 	// Run the command while the button is being held down and interrupt it once
 	// the button is released.

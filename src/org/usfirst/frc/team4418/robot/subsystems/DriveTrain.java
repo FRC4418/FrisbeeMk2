@@ -1,7 +1,7 @@
 package org.usfirst.frc.team4418.robot.subsystems;
 
 import org.usfirst.frc.team4418.robot.RobotMap;
-import org.usfirst.frc.team4418.robot.commands.DriveTrainCommand2;
+import org.usfirst.frc.team4418.robot.commands.TankControlCommand;
 
 import edu.wpi.first.wpilibj.Talon;
 import edu.wpi.first.wpilibj.command.Subsystem;
@@ -19,7 +19,7 @@ public static Talon rightBack = new Talon(RobotMap.rightFrontTalon);
     // here. Call these from Commands.
 
     public void initDefaultCommand() {
-    	setDefaultCommand(new DriveTrainCommand2());
+    	setDefaultCommand(new TankControlCommand());
            // Set the default command for a subsystem here.
         //setDefaultCommand(new MySpecialCommand());
     }

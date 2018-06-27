@@ -1,15 +1,16 @@
 package org.usfirst.frc.team4418.robot.commands;
 
-import org.usfirst.frc.team4418.robot.subsystems.ShooterSubsystem;
+import org.usfirst.frc.team4418.robot.OI;
+import org.usfirst.frc.team4418.robot.subsystems.DriveTrain;
 
 import edu.wpi.first.wpilibj.command.Command;
 
 /**
  *
  */
-public class ShooterCommand extends Command {
+public class TankControlCommand extends Command {
 
-    public ShooterCommand() {
+    public TankControlCommand() {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
     }
@@ -20,7 +21,7 @@ public class ShooterCommand extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	ShooterSubsystem.ShooterThing(1, -1);
+    	DriveTrain.TellyOpTankDrive(OI.getStick().getRawAxis(1), OI.getStick().getRawAxis(5));
     }
 
     // Make this return true when this Command no longer needs to run execute()
@@ -30,7 +31,6 @@ public class ShooterCommand extends Command {
 
     // Called once after isFinished returns true
     protected void end() {
-    	ShooterSubsystem.ShooterThing(0, 0);
     }
 
     // Called when another command which requires one or more of the same
