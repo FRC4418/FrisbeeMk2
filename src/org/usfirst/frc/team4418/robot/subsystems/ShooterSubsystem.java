@@ -10,17 +10,26 @@ import edu.wpi.first.wpilibj.command.Subsystem;
  */
 public class ShooterSubsystem extends Subsystem {
 
-public static Talon leftShooter = new Talon(RobotMap.leftShooter);
-public static Talon rightShooter = new Talon(RobotMap.rightShooter);
-    // Put methods for controlling this subsystem
-    // here. Call these from Commands.
+	/*
+	 * Initialize components
+	 */
+	public static Talon leftShooter = new Talon(RobotMap.leftShooter);
+	public static Talon rightShooter = new Talon(RobotMap.rightShooter);
 
+	
+	
+	/*
+	 * Set default command
+	 */
     public void initDefaultCommand() {
-    	
-           // Set the default command for a subsystem here.
-        //setDefaultCommand(new MySpecialCommand());
+    
     }
     
+    
+    
+    /* 
+     * Control functions
+     */
     public static void ShooterThing(double leftVal, double rightVal) {
     	leftShooter.set(leftVal);
     	rightShooter.set(rightVal);

@@ -20,7 +20,8 @@ public class ShooterCommand extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	ShooterSubsystem.ShooterThing(1, -1);
+    	//Not valid
+    	//ShooterSubsystem.ShooterThing(1, -1);
     }
 
     // Make this return true when this Command no longer needs to run execute()
@@ -30,7 +31,8 @@ public class ShooterCommand extends Command {
 
     // Called once after isFinished returns true
     protected void end() {
-    	ShooterSubsystem.ShooterThing(0, 0);
+    	//Not valid
+    	//ShooterSubsystem.ShooterThing(0, 0);
     }
 
     // Called when another command which requires one or more of the same
